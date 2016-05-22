@@ -1,0 +1,19 @@
+1)
+Idiomatic Python ?
+
+http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html
+
+2)
+How to use static, class or abstract methods in Python ?
+
+https://julien.danjou.info/blog/2013/guide-python-static-class-abstract-methods
+
+
+3)
+Python Regular Expression ?
+
+https://developers.google.com/edu/python/regular-expressions
+https://docs.python.org/2/library/re.html
+https://github.com/tartley/python-regex-cheatsheet/blob/master/cheatsheet.rst
+
+
