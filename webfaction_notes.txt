@@ -1,0 +1,43 @@
+1)
+HOW TO LOGIN WEBFRACTION USING SSH 
+----------------------------------
+
+$ ssh username@domains
+username@domains's password: ####
+
+2)
+HOW TO FIND PROJECT FOLDER
+---------------------------
+$ cd /home/sanuptpm/webapps/<WEBSITE NAME>/
+
+3)
+CREATE DUMP FILE WITH OUT PROCEDURE
+------------------------------------
+
+$ mysqldump -u root <DATABASE NAME> -p > dump.sql
+
+4)
+HOW TO CREATE BACKUP OF DATA BASE WITH PROCEDURE
+-----------------------------------------------
+
+mysqldump -u root <DATABASE NAME> -p --routines > dump1.sql
+
+5)
+HOW TO SEND FILE TO WEBFRACTION
+-------------------------------
+
+$ scp /home/sanu/dump.sql username@domains:/home/sanuptpm/webapps/<WEBSITE NAME>
+
+6)
+HOW TO RESTORE dump FILE
+-------------------------
+
+$ mysql -u <DATABASE USER NAME> -p -D <DATA NAME> < dump.sql
+
+7)
+RESTART APACHE SERVER
+---------------------
+$ su <WEBFRACTION USERNAME>
+password : ######
+$ cd /home/<WEBFRACTION USERNAME>/webapps/<WEBSITE NAME>/apache2/bin/
+$ ./restart

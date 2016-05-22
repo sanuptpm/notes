@@ -1,0 +1,71 @@
+1)
+Install MySQLdb
+-----------------
+$sudo apt-get install libmysqlclient-dev
+$pip install mysql-python
+
+2)
+Open Mysql
+------------- 
+$ mysql -u root -p
+PASSWORD:###
+
+3)
+CREATE DUMP FILE WITH OUT PROCEDURE
+------------------------------------
+$ mysqldump -u root <DATABASE NAME> -p > dump.sql
+
+4)
+HOW TO CREATE BACKUP OF DATA BASE WITH PROCEDURE
+-----------------------------------------------
+mysqldump -u root <DATABASE NAME> -p --routines > dump.sql
+
+5)
+HOW TO RESTORE dump FILE
+-------------------------
+$ mysql -u <DATABASE USER NAME> -p -D <DATABASE NAME> < dump.sql
+
+6)
+View Availble Databases 
+------------------------ 
+>>> show databases;
+
+7)
+View Tables
+------------
+>>> show tables from <DATABASE NAME>;
+ 
+8)
+go to database
+--------------
+>>> use <DATABASE NAME>;
+
+9)
+List all tables
+-----------------
+>>> show tables;
+
+10)
+View all data from table
+-------------------------
+>>> select * from emp_details;
+
+Mysql stored procedures
+-----------------------
+11)
+List all show procedures
+-------------------------
+>>> show procedure status;
+
+12)
+Show function definition
+-------------------------
+>>> SHOW CREATE PROCEDURE <procedure name>;
+
+13)
+Create user and give access to database "test"
+---------------------------------------------
+>>> CREATE USER 'dbadmin'@'localhost' IDENTIFIED BY 'dbadmin1';
+>>> GRANT ALL PRIVILEGES ON test.* TO 'dbadmin'@'%';
+
+

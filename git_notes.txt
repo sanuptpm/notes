@@ -1,0 +1,35 @@
+1)
+CLONE GITHUB PROJECT
+--------------
+$ git clone <URL>
+
+2)
+GIT DIFF RESTORING
+------------------
+$ git diff > diff.text
+$ git checkout empl/settings.py
+$ git diff
+$ git pull origin master
+$ patch -p1 < diff.text
+
+3)
+HOW TO PULL FROM GITHUB
+-----------------------
+$git pull origin master
+
+4)
+HOW TO PUSH TO GITHUB
+---------------------
+$ git diff
+
+$ git status
+
+$ git push origin master
+
+$ git add <filename>
+
+$ git commit -m "<message>"
+
+$ git push origin master
+
+5)
